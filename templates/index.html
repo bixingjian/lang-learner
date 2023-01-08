@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<!--action is the target url-->
+<form method="get" action="/get/pron">
+    <div>
+        Select the Language using GET:
+<!--name相同就只能选一个 不同就可以多选 radio是因为像radio button-->
+    </div>
+    <input type="radio" name="lang" value="eng"/> English <input type="radio" name="lang" value="jpn"/> Japanese <input type="radio" name="lang" name="ger"/> German
+    <div>
+        Please input the number: <input type="text" name="input">
+    </div>
+    <div>
+        <input type="submit", value="check pronunciation">
+    </div>
+</form>
+
+<br>
+
+<form method="post" action="/post/pron">
+    <div>
+        Select the Language using POST:
+    </div>
+    <input type="radio" name="lang" value="eng"/> English <input type="radio" name="lang" value="jpn"/> Japanese <input type="radio" name="lang" name="ger"/> German
+    <div>
+        Please input the number: <input type="text" name="input">
+    </div>
+    <div>
+        <input type="submit", value="check pronunciation">
+    </div>
+</form>
+
+</body>
+</html>
