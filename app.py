@@ -46,7 +46,14 @@ def post_pron():
     return "show pron"
 
 
+@app.route("/xiaomistore", methods=["GET"])
+def display_xiaomi_store():
+    return render_template("xiaomistore.html")
 
+
+@app.route("/bootstrap", methods=["GET"])
+def display_bootstrap():
+    return render_template("bootstrap.html")
 
 
 if __name__ == '__main__':
